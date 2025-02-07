@@ -1,6 +1,6 @@
 package com.gpsolutions.hotels.enums;
 
-public enum GroupingField {
+public enum GroupingFieldHotel {
     CITY,
     BRAND,
     COUNTY,

@@ -10,11 +10,10 @@ import java.util.Set;
 
 @Mapper(unmappedTargetPolicy = ReportingPolicy.IGNORE, componentModel = MappingConstants.ComponentModel.SPRING)
 public interface AmenityMapper {
+
     default List<String> toListNames(Set<Amenity> amenities) {
         return amenities.stream()
                 .map(Amenity::getName)
                 .toList();
     }
-
-    ;
 }

@@ -1,12 +1,11 @@
 package com.gpsolutions.hotels.service;
 
+import com.gpsolutions.hotels.dto.request.CreateHotel;
 import com.gpsolutions.hotels.dto.request.SearchFilter;
 import com.gpsolutions.hotels.dto.response.HotelResponse;
 import com.gpsolutions.hotels.dto.response.HotelShortResponse;
-import com.gpsolutions.hotels.enums.GroupingField;
 
 import java.util.List;
-import java.util.Map;
 
 public interface HotelService {
     List<HotelShortResponse> getAll();
@@ -15,5 +14,6 @@ public interface HotelService {
 
     List<HotelShortResponse> search(SearchFilter searchFilter);
 
-    Map<String, Long> groupBy(GroupingField groupingField);
+    HotelShortResponse create(CreateHotel createHotel);
+
 }

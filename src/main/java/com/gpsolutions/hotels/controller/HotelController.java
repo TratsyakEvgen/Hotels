@@ -1,18 +1,15 @@
 package com.gpsolutions.hotels.controller;
 
+import com.gpsolutions.hotels.dto.request.CreateHotel;
 import com.gpsolutions.hotels.dto.request.SearchFilter;
 import com.gpsolutions.hotels.dto.response.HotelResponse;
 import com.gpsolutions.hotels.dto.response.HotelShortResponse;
-import com.gpsolutions.hotels.enums.GroupingField;
 import com.gpsolutions.hotels.service.HotelService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Map;
 
 @RestController
 @RequiredArgsConstructor
@@ -34,8 +31,10 @@ public class HotelController {
         return hotelService.search(searchFilter);
     }
 
-    @GetMapping("/histogram/{parameter}")
-    private Map<String, Long> groupBy(@PathVariable("parameter") GroupingField groupingField) {
-        return hotelService.groupBy(groupingField);
+    @PostMapping("/hotels")
+    public HotelShortResponse create(@Valid @RequestBody CreateHotel createHotel) {
+        return hotelService.create(createHotel);
     }
+
+
 }
