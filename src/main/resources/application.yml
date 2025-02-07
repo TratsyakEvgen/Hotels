@@ -18,6 +18,9 @@ spring:
     show-sql: true
   liquibase:
     enabled: true
+springdoc:
+  default-produces-media-type: application/json
+  override-with-generic-response: false
 server:
   port: 8092
   servlet:
