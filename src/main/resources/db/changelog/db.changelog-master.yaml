@@ -1,0 +1,251 @@
+databaseChangeLog:
+  - changeSet:
+      id: "1"
+      author: "author_name"
+      changes:
+        - createTable:
+            tableName: "hotels"
+            columns:
+              - column:
+                  name: "id"
+                  type: "int"
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: "name"
+                  type: "varchar(255)"
+              - column:
+                  name: "brand"
+                  type: "varchar(255)"
+
+        - createTable:
+            tableName: "addresses"
+            columns:
+              - column:
+                  name: "id"
+                  type: "int"
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: "house_number"
+                  type: "int"
+              - column:
+                  name: "street"
+                  type: "varchar(255)"
+              - column:
+                  name: "city"
+                  type: "varchar(255)"
+              - column:
+                  name: "county"
+                  type: "varchar(255)"
+              - column:
+                  name: "post_code"
+                  type: "varchar(20)"
+
+        - createTable:
+            tableName: "contacts"
+            columns:
+              - column:
+                  name: "id"
+                  type: "int"
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: "phone"
+                  type: "varchar(20)"
+              - column:
+                  name: "email"
+                  type: "varchar(255)"
+
+        - createTable:
+            tableName: "arrival_times"
+            columns:
+              - column:
+                  name: "id"
+                  type: "int"
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: "check_in"
+                  type: "time"
+              - column:
+                  name: "check_out"
+                  type: "time"
+
+        - createTable:
+            tableName: "amenities"
+            columns:
+              - column:
+                  name: "id"
+                  type: "int"
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: "description"
+                  type: "varchar(255)"
+
+  - changeSet:
+      id: "2"
+      author: "author_name"
+      changes:
+        - insert:
+            tableName: "hotels"
+            columns:
+              - column:
+                  name: "id"
+                  valueNumeric: 1
+              - column:
+                  name: "name"
+                  value: "DoubleTree by Hilton Minsk"
+              - column:
+                  name: "brand"
+                  value: "Hilton"
+        - insert:
+            tableName: "hotels"
+            columns:
+              - column:
+                  name: "id"
+                  valueNumeric: 2
+              - column:
+                  name: "name"
+                  value: "Hotel 2"
+              - column:
+                  name: "brand"
+                  value: "Brand 2"
+        # Добавьте аналогичные вставки до 20...
+
+  - changeSet:
+      id: "3"
+      author: "author_name"
+      changes:
+        - insert:
+            tableName: "addresses"
+            columns:
+              - column:
+                  name: "id"
+                  valueNumeric: 1
+              - column:
+                  name: "house_number"
+                  valueNumeric: 9
+              - column:
+                  name: "street"
+                  value: "Pobediteley Avenue"
+              - column:
+                  name: "city"
+                  value: "Minsk"
+              - column:
+                  name: "county"
+                  value: "Belarus"
+              - column:
+                  name: "post_code"
+                  value: "220004"
+        - insert:
+            tableName: "addresses"
+            columns:
+              - column:
+                  name: "id"
+                  valueNumeric: 2
+              - column:
+                  name: "house_number"
+                  valueNumeric: 10
+              - column:
+                  name: "street"
+                  value: "Street 2"
+              - column:
+                  name: "city"
+                  value: "City 2"
+              - column:
+                  name: "county"
+                  value: "County 2"
+              - column:
+                  name: "post_code"
+                  value: "220005"
+        # Добавьте аналогичные вставки до 20...
+
+  - changeSet:
+      id: "4"
+      author: "author_name"
+      changes:
+        - insert:
+            tableName: "contacts"
+            columns:
+              - column:
+                  name: "id"
+                  valueNumeric: 1
+              - column:
+                  name: "phone"
+                  value: "+375 17 309-80-00"
+              - column:
+                  name: "email"
+                  value: "doubletreeminsk.info@hilton.com"
+        - insert:
+            tableName: "contacts"
+            columns:
+              - column:
+                  name: "id"
+                  valueNumeric: 2
+              - column:
+                  name: "phone"
+                  value: "Phone 2"
+              - column:
+                  name: "email"
+                  value: "email2@example.com"
+        # Добавьте аналогичные вставки до 20...
+
+  - changeSet:
+      id: "5"
+      author: "author_name"
+      changes:
+        - insert:
+            tableName: "arrival_times"
+            columns:
+              - column:
+                  name: "id"
+                  valueNumeric: 1
+              - column:
+                  name: "check_in"
+                  value: "14:00"
+              - column:
+                  name: "check_out"
+                  value: "12:00"
+        - insert:
+            tableName: "arrival_times"
+            columns:
+              - column:
+                  name: "id"
+                  valueNumeric: 2
+              - column:
+                  name: "check_in"
+                  value: "15:00"
+              - column:
+                  name: "check_out"
+                  value: "11:00"
+        # Добавьте аналогичные вставки до 20...
+
+  - changeSet:
+      id: "6"
+      author: "author_name"
+      changes:
+        - insert:
+            tableName: "amenities"
+            columns:
+              - column:
+                  name: "id"
+                  valueNumeric: 1
+              - column:
+                  name: "description"
+                  value: "Free parking"
+        - insert:
+            tableName: "amenities"
+            columns:
+              - column:
+                  name: "id"
+                  valueNumeric: 2
+              - column:
+                  name: "description"
+                  value: "Free WiFi"
+        # Добавьте аналогичные вставки до 20...
