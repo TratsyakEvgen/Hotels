@@ -1,4 +1,4 @@
-package com.gpsolutions.hotels.dto;
+package com.gpsolutions.hotels.dto.response;
 
 import lombok.Data;
 

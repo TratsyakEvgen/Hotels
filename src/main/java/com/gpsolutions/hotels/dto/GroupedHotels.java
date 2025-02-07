@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class GroupHotels {
+public class GroupedHotels {
     private String name;
     private long count;
 }

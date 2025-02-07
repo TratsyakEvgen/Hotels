@@ -1,1 +1,24 @@
-spring.application.name=Hotels
+spring:
+  application:
+    name: Hotels
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:test
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+    hikari:
+      maximum-pool-size: 5
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  liquibase:
+    enabled: true
+server:
+  port: 8092
+  servlet:
+    context-path: /property-view

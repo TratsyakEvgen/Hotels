@@ -1,4 +1,4 @@
-package com.gpsolutions.hotels.dto;
+package com.gpsolutions.hotels.dto.response;
 
 import lombok.Data;
 
@@ -8,7 +8,6 @@ import java.util.List;
 public class HotelResponse {
     private Long id;
     private String name;
-    private String description;
     private String brand;
     private AddressResponse address;
     private ContactResponse contacts;

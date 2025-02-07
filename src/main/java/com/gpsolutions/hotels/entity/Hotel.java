@@ -1,4 +1,4 @@
-package com.gpsolutions.hotels.model.entity;
+package com.gpsolutions.hotels.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -20,7 +20,7 @@ public class Hotel {
     private int houseNumber;
     private String street;
     private String city;
-    private String country;
+    private String county;
     private String postCode;
     private String phone;
     private String email;

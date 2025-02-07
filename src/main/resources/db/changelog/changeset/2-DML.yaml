@@ -1,0 +1,1198 @@
+databaseChangeLog:
+  - changeSet:
+      id: "1"
+      author: "Tratsiak"
+      changes:
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: "Sunset Paradise"
+              - column:
+                  name: description
+                  value: "A luxurious beachfront resort with stunning ocean views."
+              - column:
+                  name: brand
+                  value: "Paradise Resorts"
+              - column:
+                  name: house_number
+                  value: "123"
+              - column:
+                  name: street
+                  value: "Ocean Drive"
+              - column:
+                  name: city
+                  value: "Miami"
+              - column:
+                  name: county
+                  value: "USA"
+              - column:
+                  name: post_code
+                  value: "33139"
+              - column:
+                  name: phone
+                  value: "+1 305 123 4567"
+              - column:
+                  name: email
+                  value: "info@sunsetparadise.com"
+              - column:
+                  name: check_in
+                  value: "15:00"
+              - column:
+                  name: check_out
+                  value: "11:00"
+
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: "Mountain Retreat"
+              - column:
+                  name: description
+                  value: "A cozy lodge nestled in the heart of the Rockies."
+              - column:
+                  name: brand
+                  value: "Wilderness Lodges"
+              - column:
+                  name: house_number
+                  value: "456"
+              - column:
+                  name: street
+                  value: "Mountain Trail"
+              - column:
+                  name: city
+                  value: "Aspen"
+              - column:
+                  name: county
+                  value: "USA"
+              - column:
+                  name: post_code
+                  value: "81611"
+              - column:
+                  name: phone
+                  value: "+1 970 234 5678"
+              - column:
+                  name: email
+                  value: "stay@mountainretreat.com"
+              - column:
+                  name: check_in
+                  value: "14:00"
+              - column:
+                  name: check_out
+                  value: "10:00"
+
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: "Urban Oasis"
+              - column:
+                  name: description
+                  value: "A modern hotel in the bustling city center."
+              - column:
+                  name: brand
+                  value: "City Hotels"
+              - column:
+                  name: house_number
+                  value: "789"
+              - column:
+                  name: street
+                  value: "Main Street"
+              - column:
+                  name: city
+                  value: "New York"
+              - column:
+                  name: county
+                  value: "USA"
+              - column:
+                  name: post_code
+                  value: "10001"
+              - column:
+                  name: phone
+                  value: "+1 212 345 6789"
+              - column:
+                  name: email
+                  value: "hello@urbanoasis.com"
+              - column:
+                  name: check_in
+                  value: "16:00"
+              - column:
+                  name: check_out
+                  value: "12:00"
+
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: "Golden Sands"
+              - column:
+                  name: description
+                  value: "A family-friendly resort with private beach access."
+              - column:
+                  name: brand
+                  value: "Golden Resorts"
+              - column:
+                  name: house_number
+                  value: "101"
+              - column:
+                  name: street
+                  value: "Beach Boulevard"
+              - column:
+                  name: city
+                  value: "Cancun"
+              - column:
+                  name: county
+                  value: "Mexico"
+              - column:
+                  name: post_code
+                  value: "77500"
+              - column:
+                  name: phone
+                  value: "+52 998 123 4567"
+              - column:
+                  name: email
+                  value: "contact@goldensands.com"
+              - column:
+                  name: check_in
+                  value: "15:00"
+              - column:
+                  name: check_out
+                  value: "11:00"
+
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: "Alpine Chalet"
+              - column:
+                  name: description
+                  value: "A charming ski-in/ski-out chalet in the Swiss Alps."
+              - column:
+                  name: brand
+                  value: "Alpine Escapes"
+              - column:
+                  name: house_number
+                  value: "202"
+              - column:
+                  name: street
+                  value: "Snowy Peak"
+              - column:
+                  name: city
+                  value: "Zermatt"
+              - column:
+                  name: county
+                  value: "Switzerland"
+              - column:
+                  name: post_code
+                  value: "3920"
+              - column:
+                  name: phone
+                  value: "+41 27 234 5678"
+              - column:
+                  name: email
+                  value: "info@alpinechalet.com"
+              - column:
+                  name: check_in
+                  value: "14:00"
+              - column:
+                  name: check_out
+                  value: "10:00"
+
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: "Royal Palace"
+              - column:
+                  name: description
+                  value: "An opulent hotel offering royal treatment."
+              - column:
+                  name: brand
+                  value: "Luxury Stays"
+              - column:
+                  name: house_number
+                  value: "303"
+              - column:
+                  name: street
+                  value: "King Street"
+              - column:
+                  name: city
+                  value: "London"
+              - column:
+                  name: county
+                  value: "UK"
+              - column:
+                  name: post_code
+                  value: "SW1A 1AA"
+              - column:
+                  name: phone
+                  value: "+44 20 3456 7890"
+              - column:
+                  name: email
+                  value: "bookings@royalpalace.com"
+              - column:
+                  name: check_in
+                  value: "15:00"
+              - column:
+                  name: check_out
+                  value: "11:00"
+
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: "Tropical Haven"
+              - column:
+                  name: description
+                  value: "A serene resort surrounded by lush greenery."
+              - column:
+                  name: brand
+                  value: "Tropical Resorts"
+              - column:
+                  name: house_number
+                  value: "404"
+              - column:
+                  name: street
+                  value: "Palm Lane"
+              - column:
+                  name: city
+                  value: "Bali"
+              - column:
+                  name: county
+                  value: "Indonesia"
+              - column:
+                  name: post_code
+                  value: "80361"
+              - column:
+                  name: phone
+                  value: "+62 361 123 4567"
+              - column:
+                  name: email
+                  value: "stay@tropicalhaven.com"
+              - column:
+                  name: check_in
+                  value: "14:00"
+              - column:
+                  name: check_out
+                  value: "10:00"
+
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: "City Lights"
+              - column:
+                  name: description
+                  value: "A stylish hotel in the heart of the city."
+              - column:
+                  name: brand
+                  value: "Urban Stays"
+              - column:
+                  name: house_number
+                  value: "505"
+              - column:
+                  name: street
+                  value: "Broadway"
+              - column:
+                  name: city
+                  value: "San Francisco"
+              - column:
+                  name: county
+                  value: "USA"
+              - column:
+                  name: post_code
+                  value: "94109"
+              - column:
+                  name: phone
+                  value: "+1 415 234 5678"
+              - column:
+                  name: email
+                  value: "info@citylights.com"
+              - column:
+                  name: check_in
+                  value: "16:00"
+              - column:
+                  name: check_out
+                  value: "12:00"
+
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: "Seaside Escape"
+              - column:
+                  name: description
+                  value: "A tranquil retreat by the sea."
+              - column:
+                  name: brand
+                  value: "Coastal Resorts"
+              - column:
+                  name: house_number
+                  value: "606"
+              - column:
+                  name: street
+                  value: "Beach Road"
+              - column:
+                  name: city
+                  value: "Sydney"
+              - column:
+                  name: county
+                  value: "Australia"
+              - column:
+                  name: post_code
+                  value: "2000"
+              - column:
+                  name: phone
+                  value: "+61 2 3456 7890"
+              - column:
+                  name: email
+                  value: "contact@seasideescape.com"
+              - column:
+                  name: check_in
+                  value: "15:00"
+              - column:
+                  name: check_out
+                  value: "11:00"
+
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: "Rustic Cabin"
+              - column:
+                  name: description
+                  value: "A charming cabin in the woods."
+              - column:
+                  name: brand
+                  value: "Nature Stays"
+              - column:
+                  name: house_number
+                  value: "707"
+              - column:
+                  name: street
+                  value: "Forest Trail"
+              - column:
+                  name: city
+                  value: "Banff"
+              - column:
+                  name: county
+                  value: "Canada"
+              - column:
+                  name: post_code
+                  value: "T1L 1B3"
+              - column:
+                  name: phone
+                  value: "+1 403 123 4567"
+              - column:
+                  name: email
+                  value: "stay@rusticcabin.com"
+              - column:
+                  name: check_in
+                  value: "14:00"
+              - column:
+                  name: check_out
+                  value: "10:00"
+
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: "Lakeside Lodge"
+              - column:
+                  name: description
+                  value: "A peaceful lodge by the lake."
+              - column:
+                  name: brand
+                  value: "Lake Resorts"
+              - column:
+                  name: house_number
+                  value: "808"
+              - column:
+                  name: street
+                  value: "Lakeview Drive"
+              - column:
+                  name: city
+                  value: "Geneva"
+              - column:
+                  name: county
+                  value: "Switzerland"
+              - column:
+                  name: post_code
+                  value: "1201"
+              - column:
+                  name: phone
+                  value: "+41 22 234 5678"
+              - column:
+                  name: email
+                  value: "info@lakesidelodge.com"
+              - column:
+                  name: check_in
+                  value: "15:00"
+              - column:
+                  name: check_out
+                  value: "11:00"
+
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: "Historic Inn"
+              - column:
+                  name: description
+                  value: "A beautifully restored historic inn."
+              - column:
+                  name: brand
+                  value: "Heritage Stays"
+              - column:
+                  name: house_number
+                  value: "909"
+              - column:
+                  name: street
+                  value: "Old Town Road"
+              - column:
+                  name: city
+                  value: "Charleston"
+              - column:
+                  name: county
+                  value: "USA"
+              - column:
+                  name: post_code
+                  value: "29401"
+              - column:
+                  name: phone
+                  value: "+1 843 345 6789"
+              - column:
+                  name: email
+                  value: "bookings@historicinn.com"
+              - column:
+                  name: check_in
+                  value: "16:00"
+              - column:
+                  name: check_out
+                  value: "12:00"
+
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: "Desert Mirage"
+              - column:
+                  name: description
+                  value: "A luxurious oasis in the desert."
+              - column:
+                  name: brand
+                  value: "Desert Resorts"
+              - column:
+                  name: house_number
+                  value: "1010"
+              - column:
+                  name: street
+                  value: "Sandy Dunes"
+              - column:
+                  name: city
+                  value: "Dubai"
+              - column:
+                  name: county
+                  value: "UAE"
+              - column:
+                  name: post_code
+                  value: "12345"
+              - column:
+                  name: phone
+                  value: "+971 4 123 4567"
+              - column:
+                  name: email
+                  value: "stay@desertmirage.com"
+              - column:
+                  name: check_in
+                  value: "15:00"
+              - column:
+                  name: check_out
+                  value: "11:00"
+
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: "Skyline View"
+              - column:
+                  name: description
+                  value: "A modern hotel with panoramic city views."
+              - column:
+                  name: brand
+                  value: "Urban Escapes"
+              - column:
+                  name: house_number
+                  value: "1111"
+              - column:
+                  name: street
+                  value: "Highrise Avenue"
+              - column:
+                  name: city
+                  value: "Tokyo"
+              - column:
+                  name: county
+                  value: "Japan"
+              - column:
+                  name: post_code
+                  value: "100-0001"
+              - column:
+                  name: phone
+                  value: "+81 3 2345 6789"
+              - column:
+                  name: email
+                  value: "info@skylineview.com"
+              - column:
+                  name: check_in
+                  value: "14:00"
+              - column:
+                  name: check_out
+                  value: "10:00"
+
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: "Country Manor"
+              - column:
+                  name: description
+                  value: "A grand estate in the countyside."
+              - column:
+                  name: brand
+                  value: "Rural Stays"
+              - column:
+                  name: house_number
+                  value: "1212"
+              - column:
+                  name: street
+                  value: "Manor Lane"
+              - column:
+                  name: city
+                  value: "Cotswolds"
+              - column:
+                  name: county
+                  value: "UK"
+              - column:
+                  name: post_code
+                  value: "GL56 0AB"
+              - column:
+                  name: phone
+                  value: "+44 20 1234 5678"
+              - column:
+                  name: email
+                  value: "bookings@countymanor.com"
+              - column:
+                  name: check_in
+                  value: "15:00"
+              - column:
+                  name: check_out
+                  value: "11:00"
+
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: "Island Breeze"
+              - column:
+                  name: description
+                  value: "A tropical paradise on a private island."
+              - column:
+                  name: brand
+                  value: "Island Resorts"
+              - column:
+                  name: house_number
+                  value: "1313"
+              - column:
+                  name: street
+                  value: "Palm Beach"
+              - column:
+                  name: city
+                  value: "Maldives"
+              - column:
+                  name: county
+                  value: "Maldives"
+              - column:
+                  name: post_code
+                  value: "20001"
+              - column:
+                  name: phone
+                  value: "+960 123 4567"
+              - column:
+                  name: email
+                  value: "stay@islandbreeze.com"
+              - column:
+                  name: check_in
+                  value: "14:00"
+              - column:
+                  name: check_out
+                  value: "10:00"
+
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: "Metropolitan Suites"
+              - column:
+                  name: description
+                  value: "Elegant suites in the city center."
+              - column:
+                  name: brand
+                  value: "Metropolitan Hotels"
+              - column:
+                  name: house_number
+                  value: "1414"
+              - column:
+                  name: street
+                  value: "Central Avenue"
+              - column:
+                  name: city
+                  value: "Paris"
+              - column:
+                  name: county
+                  value: "France"
+              - column:
+                  name: post_code
+                  value: "75001"
+              - column:
+                  name: phone
+                  value: "+33 1 2345 6789"
+              - column:
+                  name: email
+                  value: "info@metropolitansuites.com"
+              - column:
+                  name: check_in
+                  value: "16:00"
+              - column:
+                  name: check_out
+                  value: "12:00"
+
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: "Snowy Peaks"
+              - column:
+                  name: description
+                  value: "A cozy lodge with stunning mountain views."
+              - column:
+                  name: brand
+                  value: "Mountain Resorts"
+              - column:
+                  name: house_number
+                  value: "1515"
+              - column:
+                  name: street
+                  value: "Alpine Road"
+              - column:
+                  name: city
+                  value: "Whistler"
+              - column:
+                  name: county
+                  value: "Canada"
+              - column:
+                  name: post_code
+                  value: "V0N 1B0"
+              - column:
+                  name: phone
+                  value: "+1 604 123 4567"
+              - column:
+                  name: email
+                  value: "stay@snowypeaks.com"
+              - column:
+                  name: check_in
+                  value: "15:00"
+              - column:
+                  name: check_out
+                  value: "11:00"
+
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: "Oceanfront Villa"
+              - column:
+                  name: description
+                  value: "A luxurious villa with direct beach access."
+              - column:
+                  name: brand
+                  value: "Ocean Resorts"
+              - column:
+                  name: house_number
+                  value: "1616"
+              - column:
+                  name: street
+                  value: "Shoreline Drive"
+              - column:
+                  name: city
+                  value: "Phuket"
+              - column:
+                  name: county
+                  value: "Thailand"
+              - column:
+                  name: post_code
+                  value: "83100"
+              - column:
+                  name: phone
+                  value: "+66 76 234 5678"
+              - column:
+                  name: email
+                  value: "bookings@oceanfrontvilla.com"
+              - column:
+                  name: check_in
+                  value: "14:00"
+              - column:
+                  name: check_out
+                  value: "10:00"
+
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: "Garden Retreat"
+              - column:
+                  name: description
+                  value: "A peaceful retreat surrounded by gardens."
+              - column:
+                  name: brand
+                  value: "Garden Stays"
+              - column:
+                  name: house_number
+                  value: "1717"
+              - column:
+                  name: street
+                  value: "Blossom Lane"
+              - column:
+                  name: city
+                  value: "Kyoto"
+              - column:
+                  name: county
+                  value: "Japan"
+              - column:
+                  name: post_code
+                  value: "605-0074"
+              - column:
+                  name: phone
+                  value: "+81 75 345 6789"
+              - column:
+                  name: email
+                  value: "info@gardenretreat.com"
+              - column:
+                  name: check_in
+                  value: "15:00"
+              - column:
+                  name: check_out
+                  value: "11:00"
+
+
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: "Free parking"
+
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: "Free WiFi"
+
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: "Non-smoking rooms"
+
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: "Concierge"
+
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: "On-site restaurant"
+
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: "Fitness center"
+
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: "Pet-friendly rooms"
+
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: "Room service"
+
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: "Business center"
+
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: "Meeting rooms"
+
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "1"
+              - column:
+                  name: amenity_id
+                  value: "1"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "2"
+              - column:
+                  name: amenity_id
+                  value: "2"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "3"
+              - column:
+                  name: amenity_id
+                  value: "3"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "4"
+              - column:
+                  name: amenity_id
+                  value: "4"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "5"
+              - column:
+                  name: amenity_id
+                  value: "5"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "6"
+              - column:
+                  name: amenity_id
+                  value: "6"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "7"
+              - column:
+                  name: amenity_id
+                  value: "7"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "8"
+              - column:
+                  name: amenity_id
+                  value: "8"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "9"
+              - column:
+                  name: amenity_id
+                  value: "9"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "10"
+              - column:
+                  name: amenity_id
+                  value: "10"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "11"
+              - column:
+                  name: amenity_id
+                  value: "1"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "12"
+              - column:
+                  name: amenity_id
+                  value: "2"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "13"
+              - column:
+                  name: amenity_id
+                  value: "3"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "14"
+              - column:
+                  name: amenity_id
+                  value: "4"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "15"
+              - column:
+                  name: amenity_id
+                  value: "5"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "16"
+              - column:
+                  name: amenity_id
+                  value: "6"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "17"
+              - column:
+                  name: amenity_id
+                  value: "7"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "18"
+              - column:
+                  name: amenity_id
+                  value: "8"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "19"
+              - column:
+                  name: amenity_id
+                  value: "9"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "20"
+              - column:
+                  name: amenity_id
+                  value: "10"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "1"
+              - column:
+                  name: amenity_id
+                  value: "2"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "1"
+              - column:
+                  name: amenity_id
+                  value: "3"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "10"
+              - column:
+                  name: amenity_id
+                  value: "2"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "10"
+              - column:
+                  name: amenity_id
+                  value: "3"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "10"
+              - column:
+                  name: amenity_id
+                  value: "4"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "1"
+              - column:
+                  name: amenity_id
+                  value: "5"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "1"
+              - column:
+                  name: amenity_id
+                  value: "6"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "17"
+              - column:
+                  name: amenity_id
+                  value: "1"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "18"
+              - column:
+                  name: amenity_id
+                  value: "1"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "19"
+              - column:
+                  name: amenity_id
+                  value: "1"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "1"
+              - column:
+                  name: amenity_id
+                  value: "9"
+
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  value: "1"
+              - column:
+                  name: amenity_id
+                  value: "8"
+
+

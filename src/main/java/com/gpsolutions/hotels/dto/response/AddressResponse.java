@@ -1,4 +1,4 @@
-package com.gpsolutions.hotels.dto;
+package com.gpsolutions.hotels.dto.response;
 
 import lombok.Data;
 
@@ -7,6 +7,6 @@ public class AddressResponse {
     private int houseNumber;
     private String street;
     private String city;
-    private String country;
+    private String county;
     private String postCode;
 }
