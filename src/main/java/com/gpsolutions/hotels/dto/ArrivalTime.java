@@ -8,7 +8,6 @@ import lombok.Data;
 import java.time.LocalTime;
 
 @Data
-@NotNull(message = "Arrival time must not be null")
 public class ArrivalTime {
     @Schema(implementation = String.class, example = "12:00")
     @JsonFormat(pattern = "HH:mm")

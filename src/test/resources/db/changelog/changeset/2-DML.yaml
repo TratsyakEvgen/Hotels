@@ -54,7 +54,7 @@ databaseChangeLog:
                   value: "A cozy lodge nestled in the heart of the Rockies."
               - column:
                   name: brand
-                  value: "Wilderness Lodges"
+                  value: "Paradise Resorts"
               - column:
                   name: house_number
                   value: "456"
@@ -63,7 +63,7 @@ databaseChangeLog:
                   value: "Mountain Trail"
               - column:
                   name: city
-                  value: "Aspen"
+                  value: "New York"
               - column:
                   name: county
                   value: "USA"
@@ -134,7 +134,7 @@ databaseChangeLog:
                   value: "A family-friendly resort with private beach access."
               - column:
                   name: brand
-                  value: "Golden Resorts"
+                  value: "Paradise Resorts"
               - column:
                   name: house_number
                   value: "101"
@@ -214,7 +214,7 @@ databaseChangeLog:
                   value: "An opulent hotel offering royal treatment."
               - column:
                   name: brand
-                  value: "Luxury Stays"
+                  value: "Alpine Escapes"
               - column:
                   name: house_number
                   value: "303"
@@ -254,7 +254,7 @@ databaseChangeLog:
                   value: "A serene resort surrounded by lush greenery."
               - column:
                   name: brand
-                  value: "Tropical Resorts"
+                  value: "Paradise Resorts"
               - column:
                   name: house_number
                   value: "404"
@@ -294,7 +294,7 @@ databaseChangeLog:
                   value: "A stylish hotel in the heart of the city."
               - column:
                   name: brand
-                  value: "Urban Stays"
+                  value: "Alpine Escapes"
               - column:
                   name: house_number
                   value: "505"
@@ -303,7 +303,7 @@ databaseChangeLog:
                   value: "Broadway"
               - column:
                   name: city
-                  value: "San Francisco"
+                  value: "New York"
               - column:
                   name: county
                   value: "USA"
@@ -334,7 +334,7 @@ databaseChangeLog:
                   value: "A tranquil retreat by the sea."
               - column:
                   name: brand
-                  value: "Coastal Resorts"
+                  value: "Paradise Resorts"
               - column:
                   name: house_number
                   value: "606"
@@ -454,7 +454,7 @@ databaseChangeLog:
                   value: "A beautifully restored historic inn."
               - column:
                   name: brand
-                  value: "Heritage Stays"
+                  value: "Alpine Escapes"
               - column:
                   name: house_number
                   value: "909"
@@ -463,7 +463,7 @@ databaseChangeLog:
                   value: "Old Town Road"
               - column:
                   name: city
-                  value: "Charleston"
+                  value: "New York"
               - column:
                   name: county
                   value: "USA"
@@ -494,7 +494,7 @@ databaseChangeLog:
                   value: "A luxurious oasis in the desert."
               - column:
                   name: brand
-                  value: "Desert Resorts"
+                  value: "Alpine Escapes"
               - column:
                   name: house_number
                   value: "1010"
@@ -534,7 +534,7 @@ databaseChangeLog:
                   value: "A modern hotel with panoramic city views."
               - column:
                   name: brand
-                  value: "Urban Escapes"
+                  value: "Paradise Resorts"
               - column:
                   name: house_number
                   value: "1111"
@@ -574,7 +574,7 @@ databaseChangeLog:
                   value: "A grand estate in the countyside."
               - column:
                   name: brand
-                  value: "Rural Stays"
+                  value: "Ocean Resorts"
               - column:
                   name: house_number
                   value: "1212"
@@ -614,7 +614,7 @@ databaseChangeLog:
                   value: "A tropical paradise on a private island."
               - column:
                   name: brand
-                  value: "Island Resorts"
+                  value: "Ocean Resorts"
               - column:
                   name: house_number
                   value: "1313"
@@ -694,7 +694,7 @@ databaseChangeLog:
                   value: "A cozy lodge with stunning mountain views."
               - column:
                   name: brand
-                  value: "Mountain Resorts"
+                  value: "Ocean Resorts"
               - column:
                   name: house_number
                   value: "1515"
@@ -770,9 +770,6 @@ databaseChangeLog:
                   name: name
                   value: "Garden Retreat"
               - column:
-                  name: description
-                  value: "A peaceful retreat surrounded by gardens."
-              - column:
                   name: brand
                   value: "Garden Stays"
               - column:
@@ -799,9 +796,6 @@ databaseChangeLog:
               - column:
                   name: check_in
                   value: "15:00"
-              - column:
-                  name: check_out
-                  value: "11:00"
 
 
         - insert:

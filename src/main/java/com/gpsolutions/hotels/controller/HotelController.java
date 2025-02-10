@@ -56,5 +56,4 @@ public class HotelController {
         return hotelService.create(createHotel);
     }
 
-
 }

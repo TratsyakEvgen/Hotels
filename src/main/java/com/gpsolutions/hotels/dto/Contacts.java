@@ -5,7 +5,6 @@ import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 @Data
-@NotNull(message = "Contacts time must not be null")
 public class Contacts {
     @NotBlank(message = "Phone number must not be blank")
     private String phone;
