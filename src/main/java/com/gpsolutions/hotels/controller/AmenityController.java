@@ -20,6 +20,7 @@ import java.util.List;
 @ApiResponse(responseCode = "200", useReturnTypeSchema = true)
 public class AmenityController {
     private final AmenityService amenityService;
+
     @Operation(summary = "Add amenities for hotel", tags = "amenities")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "404", description = "Hotel not found",

@@ -7,8 +7,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.transaction.annotation.Transactional;
 
-import static org.hamcrest.Matchers.allOf;
-import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -23,6 +21,7 @@ class HistogramControllerTest {
     @Test
     void groupBy_Brand() throws Exception {
         mockMvc.perform(get("/histogram/brand"))
+                .andExpect(status().isOk())
                 .andExpect(jsonPath("$.['Alpine Escapes']").value(5))
                 .andExpect(jsonPath("$.['Metropolitan Hotels']").value(1))
                 .andExpect(jsonPath("$.['Paradise Resorts']").value(6))
@@ -36,6 +35,7 @@ class HistogramControllerTest {
     @Test
     void groupBy_City() throws Exception {
         mockMvc.perform(get("/histogram/city"))
+                .andExpect(status().isOk())
                 .andExpect(jsonPath("$.['Banff']").value(1))
                 .andExpect(jsonPath("$.['New York']").value(4))
                 .andExpect(jsonPath("$.['Bali']").value(1))
@@ -58,6 +58,7 @@ class HistogramControllerTest {
     @Test
     void groupBy_County() throws Exception {
         mockMvc.perform(get("/histogram/county"))
+                .andExpect(status().isOk())
                 .andExpect(jsonPath("$.['Canada']").value(2))
                 .andExpect(jsonPath("$.['Maldives']").value(1))
                 .andExpect(jsonPath("$.['USA']").value(5))
@@ -75,6 +76,7 @@ class HistogramControllerTest {
     @Test
     void groupBy_Amenities() throws Exception {
         mockMvc.perform(get("/histogram/amenities"))
+                .andExpect(status().isOk())
                 .andExpect(jsonPath("$.['Business center']").value(3))
                 .andExpect(jsonPath("$.['Fitness center']").value(3))
                 .andExpect(jsonPath("$.['Concierge']").value(3))

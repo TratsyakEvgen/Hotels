@@ -40,7 +40,7 @@ public class DefaultAmenitiesService implements AmenityService {
                 .collect(Collectors.toMap(amenity -> amenity.getName().toLowerCase(), Function.identity()));
 
         List<Amenity> amenitiesToSave = amenitiesNames.stream()
-                .map(name -> amenityMap.computeIfAbsent(name.toLowerCase(), Amenity::new))
+                .map(name -> amenityMap.computeIfAbsent(name.toLowerCase(), s -> new Amenity(name)))
                 .collect(Collectors.toList());
 
         return amenityRepository.saveAll(amenitiesToSave);

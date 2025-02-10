@@ -27,6 +27,35 @@ class HotelControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
+    static Stream<Arguments> getSearchSource() {
+        return Stream.of(
+                Arguments.of("", iterableWithSize(20)),
+                Arguments.of("?city=", iterableWithSize(20)),
+                Arguments.of("?city=Miami", containsInAnyOrder(is(1))),
+                Arguments.of("?city=miami", containsInAnyOrder(is(1))),
+                Arguments.of("?city=Miami&city=Miami", containsInAnyOrder(is(1))),
+                Arguments.of("?city=Miami&city=Kyoto", containsInAnyOrder(is(1), is(20))),
+                Arguments.of("?city=Miami,Kyoto", containsInAnyOrder(is(1), is(20))),
+                Arguments.of("?brand=Ocean Resorts",
+                        containsInAnyOrder(is(15), is(16), is(18), is(19))),
+                Arguments.of("?brand=ocean resorts",
+                        containsInAnyOrder(is(15), is(16), is(18), is(19))),
+                Arguments.of("?brand=Ocean Resorts&city=Miami", iterableWithSize(0)),
+                Arguments.of("?county=USA",
+                        containsInAnyOrder(is(1), is(2), is(3), is(8), is(12))),
+                Arguments.of("?county=usa",
+                        containsInAnyOrder(is(1), is(2), is(3), is(8), is(12))),
+                Arguments.of("?county=usa&city=Miami", containsInAnyOrder(is(1))),
+                Arguments.of("?amenities=Free WiFi",
+                        containsInAnyOrder(is(1), is(2), is(10), is(12))),
+                Arguments.of("?amenities=free wifi",
+                        containsInAnyOrder(is(1), is(2), is(10), is(12))),
+                Arguments.of("?amenities=free wifi&city=Miami&county=usa&brand=paradise resorts",
+                        containsInAnyOrder(is(1)))
+
+        );
+    }
+
     @Test
     void getAll_shouldReturn20Values() throws Exception {
         mockMvc.perform(get("/hotels"))
@@ -193,38 +222,9 @@ class HotelControllerTest {
 
     @ParameterizedTest
     @MethodSource("getSearchSource")
-    public <T> void testListContainsObjectWithIdAndName(String parameters, Matcher<? super T> matcherId) throws Exception {
+    public <T> void testListContainsObjectWithIdAndName(String parameters, Matcher<? super T> matcher) throws Exception {
         mockMvc.perform(get("/search" + parameters))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$[*].id", matcherId));
-    }
-
-    static Stream<Arguments> getSearchSource() {
-        return Stream.of(
-                Arguments.of("", iterableWithSize(20)),
-                Arguments.of("?city=", iterableWithSize(20)),
-                Arguments.of("?city=Miami", containsInAnyOrder(is(1))),
-                Arguments.of("?city=miami", containsInAnyOrder(is(1))),
-                Arguments.of("?city=Miami&city=Miami", containsInAnyOrder(is(1))),
-                Arguments.of("?city=Miami&city=Kyoto", containsInAnyOrder(is(1), is(20))),
-                Arguments.of("?city=Miami,Kyoto", containsInAnyOrder(is(1), is(20))),
-                Arguments.of("?brand=Ocean Resorts",
-                        containsInAnyOrder(is(15), is(16), is(18), is(19))),
-                Arguments.of("?brand=ocean resorts",
-                        containsInAnyOrder(is(15), is(16), is(18), is(19))),
-                Arguments.of("?brand=Ocean Resorts&city=Miami", iterableWithSize(0)),
-                Arguments.of("?county=USA",
-                        containsInAnyOrder(is(1), is(2), is(3), is(8), is(12))),
-                Arguments.of("?county=usa",
-                        containsInAnyOrder(is(1), is(2), is(3), is(8), is(12))),
-                Arguments.of("?county=usa&city=Miami", containsInAnyOrder(is(1))),
-                Arguments.of("?amenities=Free WiFi",
-                        containsInAnyOrder(is(1), is(2), is(10), is(12))),
-                Arguments.of("?amenities=free wifi",
-                        containsInAnyOrder(is(1), is(2), is(10), is(12))),
-                Arguments.of("?amenities=free wifi&city=Miami&county=usa&brand=paradise resorts",
-                        containsInAnyOrder(is(1)))
-
-        );
+                .andExpect(jsonPath("$[*].id", matcher));
     }
 }

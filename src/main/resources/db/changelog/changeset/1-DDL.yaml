@@ -105,7 +105,7 @@ databaseChangeLog:
                     referencedTableName: amenity
                     referencedColumnNames: id
                     foreignKeyName: fk_hotel_amenity_amenity
-                  
+
 
         - addPrimaryKey:
             tableName: hotel_amenity
