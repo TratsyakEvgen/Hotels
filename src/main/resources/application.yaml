@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: Hotels
+  jpa:
+    hibernate:
+      ddl-auto: validate
+springdoc:
+  default-produces-media-type: application/json
+  override-with-generic-response: false
+server:
+  port: 8092
+  servlet:
+    context-path: /property-view
