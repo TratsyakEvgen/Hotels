@@ -62,7 +62,7 @@ class HistogramControllerTest {
 
     @Test
     void groupBy_County() throws Exception {
-        mockMvc.perform(get("/histogram/county"))
+        mockMvc.perform(get("/histogram/country"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.['Canada']").value(2))
                 .andExpect(jsonPath("$.['Maldives']").value(1))

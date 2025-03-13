@@ -24,7 +24,7 @@ public class HistogramController {
     @Operation(summary = "Get the number of hotels grouped by parameter", tags = "histograms")
     @GetMapping("/{parameter}")
     private Map<String, Long> groupBy(
-            @Parameter(required = true, schema = @Schema(allowableValues = {"brand", "city", "county", "amenities"}))
+            @Parameter(required = true, schema = @Schema(allowableValues = {"brand", "city", "country", "amenities"}))
             @PathVariable("parameter")
             GroupingFieldHotel groupingFieldHotel) {
         return histogramService.groupBy(groupingFieldHotel);

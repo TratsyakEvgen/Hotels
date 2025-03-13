@@ -20,7 +20,7 @@ public class Hotel {
     private int houseNumber;
     private String street;
     private String city;
-    private String county;
+    private String country;
     private String postCode;
     private String phone;
     private String email;

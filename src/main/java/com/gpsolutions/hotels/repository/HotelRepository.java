@@ -13,16 +13,4 @@ public interface HotelRepository extends
         GroupByFieldRepository {
     @EntityGraph(attributePaths = "amenities")
     Optional<Hotel> findById(long id);
-
-//    @Query("select new com.gpsolutions.hotels.dto.GroupHotels(h.brand, count(h)) from Hotel h group by h.brand")
-//    List<GroupHotels> groupByBrand();
-//
-//    @Query("select new com.gpsolutions.hotels.dto.GroupHotels(h.city, count(h)) from Hotel h group by h.city")
-//    List<GroupHotels> groupByCity();
-//
-//    @Query("select new com.gpsolutions.hotels.dto.GroupHotels(h.country, count(h)) from Hotel h group by h.country")
-//    List<GroupHotels> groupByCountry();
-//
-//    @Query("select new com.gpsolutions.hotels.dto.GroupHotels(a.name, count(h)) from Hotel h join h.amenities a group by a.name")
-//    List<GroupHotels> groupByAmenities();
 }

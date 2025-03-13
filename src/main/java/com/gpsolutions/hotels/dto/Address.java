@@ -12,8 +12,8 @@ public class Address {
     private String street;
     @NotBlank(message = "City must not be blank")
     private String city;
-    @NotBlank(message = "County must not be blank")
-    private String county;
+    @NotBlank(message = "Country must not be blank")
+    private String country;
     @NotBlank(message = "Post code must not be blank")
     private String postCode;
 }

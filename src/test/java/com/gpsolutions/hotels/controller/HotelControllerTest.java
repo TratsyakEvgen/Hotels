@@ -46,16 +46,16 @@ class HotelControllerTest {
                 Arguments.of("?brand=ocean resorts",
                         containsInAnyOrder(is(15), is(16), is(18), is(19))),
                 Arguments.of("?brand=Ocean Resorts&city=Miami", iterableWithSize(0)),
-                Arguments.of("?county=USA",
+                Arguments.of("?country=USA",
                         containsInAnyOrder(is(1), is(2), is(3), is(8), is(12))),
-                Arguments.of("?county=usa",
+                Arguments.of("?country=usa",
                         containsInAnyOrder(is(1), is(2), is(3), is(8), is(12))),
-                Arguments.of("?county=usa&city=Miami", containsInAnyOrder(is(1))),
+                Arguments.of("?country=usa&city=Miami", containsInAnyOrder(is(1))),
                 Arguments.of("?amenities=Free WiFi",
                         containsInAnyOrder(is(1), is(2), is(10), is(12))),
                 Arguments.of("?amenities=free wifi",
                         containsInAnyOrder(is(1), is(2), is(10), is(12))),
-                Arguments.of("?amenities=free wifi&city=Miami&county=usa&brand=paradise resorts",
+                Arguments.of("?amenities=free wifi&city=Miami&country=usa&brand=paradise resorts",
                         containsInAnyOrder(is(1)))
 
         );
@@ -97,7 +97,7 @@ class HotelControllerTest {
                 .andExpect(jsonPath("$.address.houseNumber").value(123))
                 .andExpect(jsonPath("$.address.street").value("Ocean Drive"))
                 .andExpect(jsonPath("$.address.city").value("Miami"))
-                .andExpect(jsonPath("$.address.county").value("USA"))
+                .andExpect(jsonPath("$.address.country").value("USA"))
                 .andExpect(jsonPath("$.address.postCode").value("33139"))
                 .andExpect(jsonPath("$.contacts.phone").value("+1 305 123 4567"))
                 .andExpect(jsonPath("$.contacts.email").value("info@sunsetparadise.com"))
@@ -133,7 +133,7 @@ class HotelControllerTest {
                                 "\"The DoubleTree by Hilton Hotel Minsk offers 193 luxurious rooms in the Belorussian" +
                                 " capital and stunning views of Minsk city from the hotel's 20th floor ...\"," +
                                 "\"brand\":\"Hilton\",\"address\":{\"houseNumber\": 9,\"street\":\"Pobediteley Avenue\"," +
-                                "\"city\": \"Minsk\",\"county\":\"Belarus\",\"postCode\":\"220004\"},\"contacts\":" +
+                                "\"city\": \"Minsk\",\"country\":\"Belarus\",\"postCode\":\"220004\"},\"contacts\":" +
                                 "{\"phone\":\"+375 17 309-80-00\",\"email\":\"doubletreeminsk.info@hilton.com\"}," +
                                 "\"arrivalTime\": {\"checkIn\": \"14:00\",\"checkOut\":\"12:00\"}}"))
                 .andExpect(status().isOk())
@@ -154,7 +154,7 @@ class HotelControllerTest {
                                 "\"The DoubleTree by Hilton Hotel Minsk offers 193 luxurious rooms in the Belorussian" +
                                 " capital and stunning views of Minsk city from the hotel's 20th floor ...\"," +
                                 "\"brand\":\"Hilton\",\"address\":{\"houseNumber\": 9,\"street\":\"Pobediteley Avenue\"," +
-                                "\"city\": \"Minsk\",\"county\":\"Belarus\",\"postCode\":\"220004\"},\"contacts\":" +
+                                "\"city\": \"Minsk\",\"country\":\"Belarus\",\"postCode\":\"220004\"},\"contacts\":" +
                                 "{\"phone\":\"+375 17 309-80-00\",\"email\":\"doubletreeminsk.info@hilton.com\"}," +
                                 "\"arrivalTime\": {\"checkIn\": \"14:00\"}}"))
                 .andExpect(status().isOk())
@@ -173,7 +173,7 @@ class HotelControllerTest {
                         .contentType(MediaType.APPLICATION_JSON_VALUE)
                         .content("{\"name\":\"DoubleTree by Hilton Minsk\"," +
                                 "\"brand\":\"Hilton\",\"address\":{\"houseNumber\": 9,\"street\":\"Pobediteley Avenue\"," +
-                                "\"city\": \"Minsk\",\"county\":\"Belarus\",\"postCode\":\"220004\"},\"contacts\":" +
+                                "\"city\": \"Minsk\",\"country\":\"Belarus\",\"postCode\":\"220004\"},\"contacts\":" +
                                 "{\"phone\":\"+375 17 309-80-00\",\"email\":\"doubletreeminsk.info@hilton.com\"}," +
                                 "\"arrivalTime\": {\"checkIn\": \"14:00\",\"checkOut\":\"12:00\"}}"))
                 .andExpect(status().isOk())
@@ -206,7 +206,7 @@ class HotelControllerTest {
                         .contentType(MediaType.APPLICATION_JSON_VALUE)
                         .content("{\"name\":\"\"," +
                                 "\"brand\":\"\",\"address\":{\"houseNumber\": -1,\"street\":\"\"," +
-                                "\"city\": \"\",\"county\":\"\",\"postCode\":\"\"},\"contacts\":" +
+                                "\"city\": \"\",\"country\":\"\",\"postCode\":\"\"},\"contacts\":" +
                                 "{\"phone\":\"\",\"email\":\"\"}," +
                                 "\"arrivalTime\": {\"checkIn\": \"\"}}"))
                 .andExpect(status().isBadRequest())

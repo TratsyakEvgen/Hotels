@@ -18,7 +18,7 @@ public class DefaultHotelSpecificationBuilder implements HotelSpecificationBuild
             filter -> createSpecification(filter.getName(), root -> root.get("name")),
             filter -> createSpecification(filter.getBrand(), root -> root.get("brand")),
             filter -> createSpecification(filter.getCity(), root -> root.get("city")),
-            filter -> createSpecification(filter.getCounty(), root -> root.get("county")),
+            filter -> createSpecification(filter.getCountry(), root -> root.get("country")),
             filter -> createSpecification(filter.getAmenities(), root -> root.join("amenities").get("name")));
 
     @Override

@@ -25,7 +25,7 @@ databaseChangeLog:
                   name: city
                   value: "Miami"
               - column:
-                  name: county
+                  name: country
                   value: "USA"
               - column:
                   name: post_code
@@ -65,7 +65,7 @@ databaseChangeLog:
                   name: city
                   value: "New York"
               - column:
-                  name: county
+                  name: country
                   value: "USA"
               - column:
                   name: post_code
@@ -105,7 +105,7 @@ databaseChangeLog:
                   name: city
                   value: "New York"
               - column:
-                  name: county
+                  name: country
                   value: "USA"
               - column:
                   name: post_code
@@ -145,7 +145,7 @@ databaseChangeLog:
                   name: city
                   value: "Cancun"
               - column:
-                  name: county
+                  name: country
                   value: "Mexico"
               - column:
                   name: post_code
@@ -185,7 +185,7 @@ databaseChangeLog:
                   name: city
                   value: "Zermatt"
               - column:
-                  name: county
+                  name: country
                   value: "Switzerland"
               - column:
                   name: post_code
@@ -225,7 +225,7 @@ databaseChangeLog:
                   name: city
                   value: "London"
               - column:
-                  name: county
+                  name: country
                   value: "UK"
               - column:
                   name: post_code
@@ -265,7 +265,7 @@ databaseChangeLog:
                   name: city
                   value: "Bali"
               - column:
-                  name: county
+                  name: country
                   value: "Indonesia"
               - column:
                   name: post_code
@@ -305,7 +305,7 @@ databaseChangeLog:
                   name: city
                   value: "New York"
               - column:
-                  name: county
+                  name: country
                   value: "USA"
               - column:
                   name: post_code
@@ -345,7 +345,7 @@ databaseChangeLog:
                   name: city
                   value: "Sydney"
               - column:
-                  name: county
+                  name: country
                   value: "Australia"
               - column:
                   name: post_code
@@ -385,7 +385,7 @@ databaseChangeLog:
                   name: city
                   value: "Banff"
               - column:
-                  name: county
+                  name: country
                   value: "Canada"
               - column:
                   name: post_code
@@ -425,7 +425,7 @@ databaseChangeLog:
                   name: city
                   value: "Geneva"
               - column:
-                  name: county
+                  name: country
                   value: "Switzerland"
               - column:
                   name: post_code
@@ -465,7 +465,7 @@ databaseChangeLog:
                   name: city
                   value: "New York"
               - column:
-                  name: county
+                  name: country
                   value: "USA"
               - column:
                   name: post_code
@@ -505,7 +505,7 @@ databaseChangeLog:
                   name: city
                   value: "Dubai"
               - column:
-                  name: county
+                  name: country
                   value: "UAE"
               - column:
                   name: post_code
@@ -545,7 +545,7 @@ databaseChangeLog:
                   name: city
                   value: "Tokyo"
               - column:
-                  name: county
+                  name: country
                   value: "Japan"
               - column:
                   name: post_code
@@ -571,7 +571,7 @@ databaseChangeLog:
                   value: "Country Manor"
               - column:
                   name: description
-                  value: "A grand estate in the countyside."
+                  value: "A grand estate in the countryside."
               - column:
                   name: brand
                   value: "Ocean Resorts"
@@ -585,7 +585,7 @@ databaseChangeLog:
                   name: city
                   value: "Cotswolds"
               - column:
-                  name: county
+                  name: country
                   value: "UK"
               - column:
                   name: post_code
@@ -595,7 +595,7 @@ databaseChangeLog:
                   value: "+44 20 1234 5678"
               - column:
                   name: email
-                  value: "bookings@countymanor.com"
+                  value: "bookings@countrymanor.com"
               - column:
                   name: check_in
                   value: "15:00"
@@ -625,7 +625,7 @@ databaseChangeLog:
                   name: city
                   value: "Maldives"
               - column:
-                  name: county
+                  name: country
                   value: "Maldives"
               - column:
                   name: post_code
@@ -665,7 +665,7 @@ databaseChangeLog:
                   name: city
                   value: "Paris"
               - column:
-                  name: county
+                  name: country
                   value: "France"
               - column:
                   name: post_code
@@ -705,7 +705,7 @@ databaseChangeLog:
                   name: city
                   value: "Whistler"
               - column:
-                  name: county
+                  name: country
                   value: "Canada"
               - column:
                   name: post_code
@@ -745,7 +745,7 @@ databaseChangeLog:
                   name: city
                   value: "Phuket"
               - column:
-                  name: county
+                  name: country
                   value: "Thailand"
               - column:
                   name: post_code
@@ -782,7 +782,7 @@ databaseChangeLog:
                   name: city
                   value: "Kyoto"
               - column:
-                  name: county
+                  name: country
                   value: "Japan"
               - column:
                   name: post_code

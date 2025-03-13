@@ -30,7 +30,7 @@ public interface HotelMapper {
                 hotel.getStreet(),
                 hotel.getCity(),
                 hotel.getPostCode(),
-                hotel.getCounty());
+                hotel.getCountry());
 
     }
 }
